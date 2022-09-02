@@ -1,0 +1,21 @@
+main{
+    grid-area: main;
+    justify-content: center;    
+    font-family: satisfy;
+    text-align:left;
+    section{
+        img{
+            @extend .fotoTranslate;
+        }  
+    }
+}
+
+.fotoTranslate{
+    -webkit-transition: 3s linear; 
+    transition: 3s linear;
+ }
+ 
+ .fotoTranslate:hover{
+     -webkit-transform: translate(400px);
+     transform: translate(400);
+ }

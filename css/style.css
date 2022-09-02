@@ -1,0 +1,122 @@
+header {
+  grid-area: header;
+  background-color: #d98e04; }
+  header h1 {
+    color: white;
+    font-size: xx-large;
+    font-family: satisfy;
+    text-align: center;
+    margin-top: 20px; }
+    header h1 h3 {
+      color: white;
+      font-family: satisfy;
+      text-align: center;
+      font-size: medium; }
+
+nav {
+  grid-area: menu;
+  justify-content: center; }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+
+.menu, nav ul li a {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 150px;
+  margin: 1cm;
+  overflow: hidden; }
+
+.menuIndex, nav ul li a {
+  border-top: #f7eec1 0.3em solid;
+  color: black; }
+
+.menuColecciones, nav ul li a {
+  border-top: #f7eec1 0.3em solid;
+  color: black; }
+
+.menuLocales, nav ul li a {
+  border-top: #f7eec1 0.3em solid;
+  color: black; }
+
+.menuSobreNosotros, nav ul li a {
+  border-top: #f7eec1 0.3em solid;
+  color: black; }
+
+.menuContacto, nav ul li a {
+  border-top: #f7eec1 0.3em solid;
+  color: black; }
+
+.menu > span, nav ul li a > span {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out; }
+
+.menu:after, nav ul li a:after, .menu > span > span, nav ul li a > span > span {
+  display: block;
+  text-align: center;
+  border-radius: 0em;
+  padding: 2em 0 1.5em; }
+
+.menu:after, nav ul li a:after {
+  content: attr(data-title);
+  width: 100%;
+  background-color: #d98e04;
+  color: white; }
+
+.menu > span > span, nav ul li a > span > span {
+  width: 150px;
+  color: white; }
+
+.menu.menuIndex > span > span, nav ul li a > span > span {
+  background: #ca8505; }
+
+.menu.menuColecciones > span > span, nav ul li a > span > span {
+  background: #ca8505; }
+
+.menu.menuLocales > span > span, nav ul li a > span > span {
+  background: #ca8505; }
+
+.menu.menuSobreNosotros > span > span, nav ul li a > span > span {
+  background: #ca8505; }
+
+.menu.menuContacto > span > span, nav ul li a > span > span {
+  background: #ca8505; }
+
+.menu:hover > span, nav ul li a:hover > span {
+  height: 100%; }
+
+li a {
+  display: inline;
+  float: left;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+main {
+  grid-area: main;
+  justify-content: center; }
+
+.fotoTranslate, main section {
+  -webkit-transition: 3s linear;
+  transition: 3s linear; }
+
+.fotoTranslate:hover, main section:hover {
+  -webkit-transform: translate(400px);
+  transform: translate(400); }
+
+footer {
+  grid-area: pie;
+  background-color: #ca8505; }
+  footer div {
+    color: white;
+    font-size: xx-large;
+    font-family: satisfy;
+    text-align: center; }

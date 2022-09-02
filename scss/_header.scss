@@ -1,0 +1,17 @@
+header{
+    grid-area: header;
+    background-color: #d98e04;  
+    h1{
+        color: white;
+        font-size: xx-large;
+        font-family: satisfy;
+        text-align: center;
+        margin-top: 20px;
+        h3{
+            color: white;
+            font-family:'Courier New', Courier, monospace;
+            text-align: center;
+            font-size:medium;
+        }
+    }
+}
